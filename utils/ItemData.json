@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "ItemName":"testItem",
+        "ItemDescription":"Some sort of testing description.",
+        "textContent":"some website content",
+        "itemImageLink":"some sort of image link",
+        "itemStackType":"additive or multiplicative",
+        "stackingVar1":"primary number affected by stack",
+        "stackingValue1":"value of item per stack (after first item)",
+        "stackingVar2":"secondary number affected by stack (if any)",
+        "stackingValue2":"value of item2 per stack (after first item)"
+    },
+    {
+        "id":2,
+        "ItemName":"Second Item (for test)2",
+        "ItemDescription":"Some sort of testing description.2",
+        "textContent":"some website content2",
+        "itemImageLink":"some sort of image link2",
+        "itemStackType":"additive or multiplicative2",
+        "stackingVar1":"primary number affected by stack2",
+        "stackingValue1":"value of item per stack (after first item)2",
+        "stackingVar2":"secondary number affected by stack (if any)2",
+        "stackingValue2":"value of item2 per stack (after first item)2"
+    }
+]
