@@ -12,3 +12,5 @@ use a large json file to store all the data for both web page content as well as
 express
 pug
 express-sessions
+cookie-parser
+nodemon
