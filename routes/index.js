@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const articles = require('./../public/contents/ArticleData.json');
+const data = require('./../public/ItemData.json');
 
 
 router.get('/subscribe',(req,res)=>{
