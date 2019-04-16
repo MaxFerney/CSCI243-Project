@@ -18,6 +18,7 @@
   "homepage": "https://github.com/MaxFerney/CSCI243-Project#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-sessions": "^1.0.6",
     "pug": "^2.0.3"
   }
 }
