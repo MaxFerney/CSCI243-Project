@@ -1,0 +1,9 @@
+extends layout.pug
+
+block title
+    title Risk of Rain 2 Builder
+block content
+    each item in data
+        h2= item.name
+        h3= item.description
+        p= item.content
