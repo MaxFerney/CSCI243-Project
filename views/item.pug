@@ -10,11 +10,22 @@ block title
     title= item.name+" | RoR2 Builder"
 block content
     - var stackSuffix1 = " ";
-    - var stackSuffix2 = " ";
+    - var stackingVar1 = item.stackingVar1;
+    - var stackingValue1 = item.stackingValue1;
+    
+    
     if(item.stackingType1=="percentage")
         - var stackSuffix1 = "%";
+        - var stackingVar1 = (item.stackingVar1 * 100).toFixed(2);
+        - var stackingValue1 = (item.stackingValue1 * 100).toFixed(2);
+    
+    - var stackSuffix2 = " ";
+    - var stackingVar2 = item.stackingVar2;
+    - var stackingValue2 = item.stackingValue2;
     if(item.stackingType2=="percentage")
         - var stackSuffix2 = "%";
+        - var stackingVar2 = (item.stackingVar2 * 100).toFixed(2);
+        - var stackingValue2 = (item.stackingValue2 * 100).toFixed(2);
     hr
     h1= item.name
     img(src=item.imageLink alt=item.name)
@@ -30,12 +41,12 @@ block content
                 th Initial Item
                 th Stack Effect
             tr
-                td=item.stackingVar1+stackSuffix1+" "+item.stackingName1
-                td=item.stackingValue1+stackSuffix1+" "+item.stackingName1+" per stack"
+                td=stackingVar1+stackSuffix1+" "+item.stackingName1
+                td=stackingValue1+stackSuffix1+" "+item.stackingName1+" per stack"
             if(item.stackingVar2 != null)
                 tr
-                    td=item.stackingVar2+stackSuffix2+" "+item.stackingName2
-                    td=item.stackingValue2+stackSuffix2+" "+item.stackingName2+" per stack"
+                    td=stackingVar2+stackSuffix2+" "+item.stackingName2
+                    td=stackingValue2+stackSuffix2+" "+item.stackingName2+" per stack"
     
     
     
