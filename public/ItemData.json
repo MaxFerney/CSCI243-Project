@@ -29,7 +29,7 @@
         "stackingVar2":null,
         "stackingValue2":null,
         "stackingType2":null,
-        "stackingName1":null
+        "stackingName2":null
     },
     {
         "id":3,
@@ -45,7 +45,7 @@
         "stackingVar2":null,
         "stackingValue2":null,
         "stackingType2":null,
-        "stackingName1":null
+        "stackingName2":null
     },
     {
         "id":4,
@@ -61,7 +61,7 @@
         "stackingVar2":null,
         "stackingValue2":null,
         "stackingType2":null,
-        "stackingName1":null
+        "stackingName2":null
     },
     {
         "id":5,
@@ -77,6 +77,6 @@
         "stackingVar2":3,
         "stackingValue2":1.5,
         "stackingType2":"points",
-        "stackingName1":"Meter radius"
+        "stackingName2":"Meter radius"
     }
 ]

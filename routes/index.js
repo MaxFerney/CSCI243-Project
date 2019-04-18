@@ -35,6 +35,13 @@ router.get('/build',(req,res)=>{
     });
 });
 
+router.get('/item/:id',(req,res)=>{
+    item=data[parseInt(req.params.id)-1];
+    res.render('item', {
+        item : item
+    })
+});
+
 
 router.get('/',(req,res)=>{
     //Articles, visits
