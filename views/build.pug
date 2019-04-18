@@ -1,0 +1,18 @@
+extends layout.pug
+
+block title
+    title="Risk of Rain Build"
+block content
+    form(method='GET')
+        label Item:
+            select
+                each item in data
+                    option(value=item.name) #{item.name}
+    //-
+        label Description:
+            input(type='text' name='description' value=product.description)
+        label Image (link):
+            input(type='text' name='image' value=product.image)
+        label Price:
+            input(type='number' name='price' value=product.price)
+        button(type='submit' value='Submit') Submit

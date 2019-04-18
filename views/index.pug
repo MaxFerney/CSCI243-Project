@@ -2,8 +2,14 @@ extends layout.pug
 
 block title
     title Risk of Rain 2 Builder
+block append navigation
+    a(href="/build")
+        p Build
 block content
+    h1 Risk of Rain 2 Items
     each item in data
-        h2= item.name
-        h3= item.description
-        p= item.content
+        a(href="/items/"+item.id)
+            div
+                h2= item.name
+                h3= item.description
+                p= item.content

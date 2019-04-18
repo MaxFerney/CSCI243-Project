@@ -29,7 +29,11 @@ const data = require('./../public/ItemData.json');
 //         });
 //     }
 // });
-
+router.get('/build',(req,res)=>{
+    res.render('build', {
+        data : data
+    });
+});
 
 
 router.get('/',(req,res)=>{
