@@ -3,11 +3,19 @@ extends layout.pug
 block title
     title="Risk of Rain Build"
 block content
+    -var currentItem=null;
     form(method='GET')
-        label Item:
-            select
+        label(for="buildItemSelect") Item:
+            select(id="buildItemSelect")
                 each item in data
                     option(value=item.name) #{item.name}
+                    - var currentItem = item;
+        //-
+            implement ajax here for image
+        if(currentItem != null)
+            img(src=item.imageLink alt=item.name class="buildItemImage")
+        label(for="buildAmount") Amount:
+            input(id="buildAmount" type="number" name="amount")
     //-
         label Description:
             input(type='text' name='description' value=product.description)

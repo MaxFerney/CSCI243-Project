@@ -8,5 +8,6 @@ block content
         a(href="/item/"+item.id)
             div
                 h2= item.name
-                h3= item.description
-                p= item.content
+                img(src=item.imageLink alt=item.name)
+                p= item.description
+                
