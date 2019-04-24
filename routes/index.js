@@ -31,6 +31,9 @@ const Calc = require('./../utils/functions.js')
 //         });
 //     }
 // });
+
+
+
 router.post('/build',(req,res)=>{
     //Recieve Data
     var hasInfo=true;
@@ -95,6 +98,10 @@ router.get('/build',(req,res)=>{
         info : defaultInfo
     });
 });
+
+
+
+
 
 router.get('/item/:id',(req,res)=>{
     item=data[parseInt(req.params.id)-1];
