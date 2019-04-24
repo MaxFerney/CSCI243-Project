@@ -34,7 +34,7 @@ const Calc = require('./../utils/functions.js')
 
 
 
-router.post('/build',(req,res)=>{
+router.post('/buildMe',(req,res)=>{
     //Recieve Data
     var hasInfo=true;
     numItems = parseInt(req.body.amount);
@@ -79,12 +79,14 @@ router.post('/build',(req,res)=>{
         name:req.body.itemName,
         calcInfo:returnString
     };
+
     //Sends data to the site
-    res.render('build', {
-        data : data,
-        hasInfo:hasInfo,
-        info : info,
-    });
+    // res.render('build', {
+    //     data : data,
+    //     hasInfo:hasInfo,
+    //     info : info,
+    // });
+    res.json(info)
 });
 
 router.get('/build',(req,res)=>{

@@ -2,6 +2,8 @@ extends layout.pug
 
 block title
     title="Risk of Rain Build"
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js")
+    script(src="/javascripts/ajax.js")
 block content
     //-var currentItem=null;
     form(method="POST")
@@ -10,17 +12,17 @@ block content
             select(id="buildItemSelect" name="itemName")
                 each item in data
                     if(item.name == info.name)
-                        option(value=item.name selected="selected") #{item.name}
+                        option(name="buildItemOption" value=item.name selected="selected") #{item.name}
                     else
-                        option(value=item.name) #{item.name}
+                        option(name="buildItemOption" value=item.name) #{item.name}
                     - var currentItem = item;
-        //-implement ajax here for image
+        //-implement ajax here for image (will have to use live update)
         if(currentItem != null)
-            img(src=currentItem.imageLink alt=currentItem.name class="buildItemImage")
+            img(src=currentItem.imageLink alt=currentItem.name id="buildItemImage")
         label(for="buildAmount") Amount:
             input(id="buildAmount" type="number" min="1" max="10000" name="amount" value=info.amount)
         br
-        button(type="submit") Build
+        button(id="submit") Build
         
     //-
         label Description:
@@ -30,8 +32,9 @@ block content
         label Price:
             input(type='number' name='price' value=product.price)
         button(type='submit' value='Submit') Submit
-    
-    if (hasInfo)
+    hr
+    div(id="result")
+    //-
         h2="SUCCESS"
         h3=info.name
         p=info.amount
