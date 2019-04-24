@@ -6,8 +6,13 @@ block title
     script(src="/javascripts/ajax.js")
 block content
     //-var currentItem=null;
-    form(method="POST")
+    form
         //- create another select for item rarity, then compare this string to item string
+        label(for="buildItemRarity") Item Rarity:
+            select(id="buildItemRarity" name="itemRarity")
+                option(name="buildRarityOption" value="common" selected="selected") common
+                option(name="buildRarityOption" value="uncommon") uncommon
+                option(name="buildRarityOption" value="rare") rare
         label(for="buildItemSelect") Item:
             select(id="buildItemSelect" name="itemName")
                 each item in data
@@ -34,6 +39,7 @@ block content
         button(type='submit' value='Submit') Submit
     hr
     div(id="result")
+    div(id="rarity")
     //-
         h2="SUCCESS"
         h3=info.name

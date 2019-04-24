@@ -27,6 +27,28 @@ $(document).ready(()=>{
         });
     })
 
+    $('#buildItemRarity').change((e)=>{
+        //prevents POST from occuring
+        e.preventDefault();
+        //grab data from page
+        let rarityName = $("option[name=\"buildRarityOption\"]:selected").val();
+        console.log(rarityName);
+        //send data to post
+        $.ajax({
+            url: "/selectRarity",
+            method: "POST",
+            data:{
+                rarityName:rarityName,
+            }
+        }) //catch data from post
+        .done((data)=>{
+            $("#rarity").html("<h2>"+data.rarityName+"</h2>");
+        })
+        .fail((xhr)=>{
+            console.log("An Error occured");
+        }).change();
+    })
+
     //THIS WILL EVENTUALLY UPDATE THE IMAGE
     // $('#buildItemImage').on('click',(e)=>{
     //     e.preventDefault();
