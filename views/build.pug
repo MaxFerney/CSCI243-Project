@@ -18,7 +18,7 @@ block content
         if(currentItem != null)
             img(src=currentItem.imageLink alt=currentItem.name class="buildItemImage")
         label(for="buildAmount") Amount:
-            input(id="buildAmount" type="number" min="1" max="5000" name="amount" value=info.amount)
+            input(id="buildAmount" type="number" min="1" max="10000" name="amount" value=info.amount)
         br
         button(type="submit") Build
         
