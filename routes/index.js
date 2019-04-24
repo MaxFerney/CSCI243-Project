@@ -81,12 +81,13 @@ router.post('/buildMe',(req,res)=>{
     };
 
     //Sends data to the site
+    res.json(info)
     // res.render('build', {
     //     data : data,
     //     hasInfo:hasInfo,
     //     info : info,
     // });
-    res.json(info)
+
 });
 
 router.get('/build',(req,res)=>{
