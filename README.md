@@ -9,6 +9,8 @@ Throw in the grid system after the page starts working?
 
 use cookies/sessions to save build from last website visit.
 
+use ajax on image
+
 # Installs
 express
 pug
