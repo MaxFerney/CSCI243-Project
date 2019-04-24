@@ -70,7 +70,7 @@ router.post('/buildMe',(req,res)=>{
         if(suffixes[1]=="%"){
             value2*=100;
         }
-        returnString+=" "+value2.toFixed(2).toString() + suffixes[1] + " "+currentItem.stackingName2;
+        returnString+="<br>"+value2.toFixed(2).toString() + suffixes[1] + " "+currentItem.stackingName2;
     }
 
     //Gather computed data to send back
