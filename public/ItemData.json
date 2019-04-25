@@ -2,7 +2,7 @@
     {
         "id":1,
         "name":"Soldier's Syringe",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Increases attack speed.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/f2/Soldier%27s_Syringe.png/revision/latest?cb=20190411035100",
         "rarity":"common",
@@ -19,7 +19,7 @@
     {
         "id":2,
         "name":"Monster Tooth",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Drop a healing orb on kill.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/3/3b/Monster_Tooth.png/revision/latest?cb=20190411034916",
         "rarity":"common",
@@ -36,7 +36,7 @@
     {
         "id":3,
         "name":"Lens-Maker's Glasses",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance to 'Critically Strike', dealing double damage.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/2/23/Lens-Maker%27s_Glasses.png/revision/latest?cb=20190411034902",
         "rarity":"common",
@@ -53,7 +53,7 @@
     {
         "id":4,
         "name":"Paul's Goat Hoof",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Move faster",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/4/4a/Paul%27s_Goat_Hoof.png/revision/latest?cb=20190411034934",
         "rarity":"common",
@@ -70,7 +70,7 @@
     {
         "id":5,
         "name":"Bustling Fungus",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Heal all nearby allies after standing still for 2 seconds.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/3/33/Bustling_Fungus.png/revision/latest?cb=20190411034345",
         "rarity":"common",
@@ -87,7 +87,7 @@
     {
         "id":6,
         "name":"Crowbar",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Deal more damage to healthy enemies.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/c/c0/Crowbar.png/revision/latest?cb=20190411034408",
         "rarity":"common",
@@ -104,7 +104,7 @@
     {
         "id":7,
         "name":"Tri-Tip Dagger",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance to bleed enemies on hit.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/1/17/Tri-Tip_Dagger.png/revision/latest?cb=20190411035144",
         "rarity":"common",
@@ -121,7 +121,7 @@
     {
         "id":8,
         "name":"Warbanner",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Drop a Warbanner on leveling up, giving you great strength.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/f0/Warbanner.png/revision/latest?cb=20190411035204",
         "rarity":"common",
@@ -138,7 +138,7 @@
     {
         "id":9,
         "name":"Cautious Slug",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Rapidly heal outside of danger.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/c/c6/Cautious_Slug.png/revision/latest?cb=20190411034350",
         "rarity":"common",
@@ -155,7 +155,7 @@
     {
         "id":10,
         "name":"Personal Shield Generator",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Gain a recharging shield.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/e/e0/Personal_Shield_Generator.png/revision/latest?cb=20190411034939",
         "rarity":"common",
@@ -172,7 +172,7 @@
     {
         "id":11,
         "name":"Medkit",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Receive a delayed heal after taking damage",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/0/0f/Medkit.png/revision/latest?cb=20190411034907",
         "rarity":"common",
@@ -189,7 +189,7 @@
     {
         "id":12,
         "name":"Gasoline",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Killing enemies sets nearby enemies on fire.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/6/6e/Gasoline.png/revision/latest?cb=20190411034748",
         "rarity":"common",
@@ -206,7 +206,7 @@
     {
         "id":13,
         "name":"Bundle of Fireworks",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Opening a chest launches fireworks at nearby enemies.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/3/3d/Bundle_of_Fireworks.png/revision/latest?cb=20190411034341",
         "rarity":"common",
@@ -223,7 +223,7 @@
     {
         "id":14,
         "name":"Energy Drink",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Sprint faster.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/7/7e/Energy_Drink.png/revision/latest?cb=20190411034729",
         "rarity":"common",
@@ -240,7 +240,7 @@
     {
         "id":15,
         "name":"Backup Magazine",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Add an extra charge of your Secondary skill.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/f3/Backup_Magazine.png/revision/latest?cb=20190411034315",
         "rarity":"common",
@@ -257,7 +257,7 @@
     {
         "id":16,
         "name":"Sticky Bomb",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance on hit to attach a bomb to enemies.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/7/74/Sticky_Bomb.png/revision/latest?cb=20190411035109",
         "rarity":"common",
@@ -274,7 +274,7 @@
     {
         "id":17,
         "name":"Armor-Piercing Rounds",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Deal extra damage to bosses",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/f0/Armor-Piercing_Rounds.png/revision/latest?cb=20190411034306",
         "rarity":"common",
@@ -291,7 +291,7 @@
     {
         "id":18,
         "name":"AtG Missile Mk. 1",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance to fire a missile",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/6/6a/AtG_Missile_Mk._1.png/revision/latest?cb=20190411034310",
         "rarity":"uncommon",
@@ -308,7 +308,7 @@
     {
         "id":19,
         "name":"Will-o'-the-wisp",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Detonate enemies on kill.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/c/c4/Will-o%27-the-wisp.png/revision/latest?cb=20190411035214",
         "rarity":"uncommon",
@@ -325,7 +325,7 @@
     {
         "id":20,
         "name":"Hopoo Feather",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Gain an extra jump",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/3/3a/Hopoo_Feather.png/revision/latest?cb=20190411034827",
         "rarity":"uncommon",
@@ -342,7 +342,7 @@
     {
         "id":21,
         "name":"Ukulele",
-        "description":"INSERT_DESCRIPTION",
+        "description":"...and his music was electric.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/9/98/Ukulele.png/revision/latest?cb=20190411035149",
         "rarity":"uncommon",
@@ -359,7 +359,7 @@
     {
         "id":22,
         "name":"Leeching Seed",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Dealing damage heals you.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/a/a0/Leeching_Seed.png/revision/latest?cb=20190411034843",
         "rarity":"uncommon",
@@ -376,7 +376,7 @@
     {
         "id":23,
         "name":"Predatory Instincts",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Critical Strikes' increase attack speed. Stacks 3 times.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/3/39/Predatory_Instincts.png/revision/latest?cb=20190411034944",
         "rarity":"uncommon",
@@ -393,7 +393,7 @@
     {
         "id":24,
         "name":"Red Whip",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Move fast out of combat.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/2/2a/Red_Whip.png/revision/latest?cb=20190411035006",
         "rarity":"uncommon",
@@ -410,7 +410,7 @@
     {
         "id":25,
         "name":"Old War Stealthkit",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Turn invisible on taking heavy damage.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/2/2c/Old_War_Stealthkit.png/revision/latest?cb=20190411034930",
         "rarity":"uncommon",
@@ -427,7 +427,7 @@
     {
         "id":26,
         "name":"Harvester's Scythe",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Critical Strikes' heal you.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/e/e1/Harvester%27s_Scythe.png/revision/latest?cb=20190411034817",
         "rarity":"uncommon",
@@ -444,7 +444,7 @@
     {
         "id":27,
         "name":"Fuel Cell",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Hold an additional equipment charge. Reduce equipment cooldown.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/4/4d/Fuel_Cell.png/revision/latest?cb=20190411034744",
         "rarity":"uncommon",
@@ -461,7 +461,7 @@
     {
         "id":28,
         "name":"Infusion",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Killing an enemy permanently increases your health, up to 100.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/7/7d/Infusion.png/revision/latest?cb=20190411034834",
         "rarity":"uncommon",
@@ -478,7 +478,7 @@
     {
         "id":29,
         "name":"Berzerker's Pauldron",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Enter a frenzy after killing 3 enemies in quick succession.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/a/a6/Berzerker%27s_Pauldron.png/revision/latest?cb=20190411034324",
         "rarity":"uncommon",
@@ -495,7 +495,7 @@
     {
         "id":30,
         "name":"Rose Buckler",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Reduce incoming damage while sprinting.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/2/2f/Rose_Buckler.png/revision/latest?cb=20190411035015",
         "rarity":"uncommon",
@@ -512,7 +512,7 @@
     {
         "id":31,
         "name":"Runald's Band",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance on hit to strike an enemy with a runic ice blast.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/0/05/Runald%27s_Band.png/revision/latest?cb=20190411035023",
         "rarity":"uncommon",
@@ -529,7 +529,7 @@
     {
         "id":32,
         "name":"Kjaro's Band",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance on hit to strike an enemy with a runic flame tornado.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/e/eb/Kjaro%27s_Band.png/revision/latest?cb=20190411034838",
         "rarity":"uncommon",
@@ -546,7 +546,7 @@
     {
         "id":33,
         "name":"Chronobauble",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Slow enemies on hit.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/3/38/Chronobauble.png/revision/latest?cb=20190411034359",
         "rarity":"uncommon",
@@ -563,7 +563,7 @@
     {
         "id":34,
         "name":"Wax Quail",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Jumping while sprinting boosts you forward.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/6/6c/Wax_Quail.png/revision/latest?cb=20190411035209",
         "rarity":"uncommon",
@@ -581,7 +581,7 @@
     {
         "id":35,
         "name":"Brilliant Behemoth",
-        "description":"INSERT_DESCRIPTION",
+        "description":"All your attacks explode!",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/fa/Brilliant_Behemoth.png/revision/latest?cb=20190411034332",
         "rarity":"rare",
@@ -598,7 +598,7 @@
     {
         "id":36,
         "name":"Ceremonial Dagger",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Killing an enemy releases homing daggers.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/7/76/Ceremonial_Dagger.png/revision/latest?cb=20190411034354",
         "rarity":"rare",
@@ -615,7 +615,7 @@
     {
         "id":37,
         "name":"Happiest Mask",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance on killing an enemy to summon a ghost.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/d/d4/Happiest_Mask.png/revision/latest?cb=20190411034807",
         "rarity":"rare",
@@ -632,7 +632,7 @@
     {
         "id":38,
         "name":"Sentient Meat Hook",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Chance to hook all nearby enemies.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/e/e7/Sentient_Meat_Hook.png/revision/latest?cb=20190411035050",
         "rarity":"rare",
@@ -649,7 +649,7 @@
     {
         "id":39,
         "name":"Unstable Tesla Coil",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Shock all nearby enemies every 10 seconds.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/e/e4/Unstable_Tesla_Coil.png/revision/latest?cb=20190411035154",
         "rarity":"rare",
@@ -666,7 +666,7 @@
     {
         "id":40,
         "name":"Hardlight Afterburner",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Add 2 extra charges of your Utility skill. Reduce Utility skill cooldown.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/2/20/Hardlight_Afterburner.png/revision/latest?cb=20190411034812",
         "rarity":"rare",
@@ -683,7 +683,7 @@
     {
         "id":41,
         "name":"Wake of Vultures",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Temporarily steal the power of slain elites.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/f8/Wake_of_Vultures.png/revision/latest?cb=20190411035159",
         "rarity":"rare",
@@ -700,7 +700,7 @@
     {
         "id":42,
         "name":"N'kuhana's Opinion",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Fire haunting skulls when healed.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/c/c9/N%27kuhana%27s_Opinion.png/revision/latest?cb=20190411034921",
         "rarity":"rare",
@@ -717,7 +717,7 @@
     {
         "id":43,
         "name":"Soulbound Catalyst",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Kills reduce equipment cooldown.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/f/f1/Soulbound_Catalyst.png/revision/latest?cb=20190411035105",
         "rarity":"rare",
@@ -734,7 +734,7 @@
     {
         "id":44,
         "name":"Brainstalks",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Skills have NO cooldowns for a short period after killing an elite.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/c/c0/Brainstalks.png/revision/latest?cb=20190411034328",
         "rarity":"rare",
@@ -751,7 +751,7 @@
     {
         "id":45,
         "name":"Rejuvenation Rack",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Double the strength of healing.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/0/0a/Rejuvenation_Rack.png/revision/latest?cb=20190411035011",
         "rarity":"rare",
@@ -769,7 +769,7 @@
     {
         "id":46,
         "name":"Titanic Knurl",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Boosts health and regeneration.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/9/9f/Titanic_Knurl.png/revision/latest?cb=20190411035129",
         "rarity":"boss",
@@ -786,7 +786,7 @@
     {
         "id":47,
         "name":"Queen's Gland",
-        "description":"INSERT_DESCRIPTION",
+        "description":"Recruit a Beetle Guard.",
         "content":"INSERT_DESCRIPTION",
         "imageLink":"https://vignette.wikia.nocookie.net/riskofrain2/images/0/0b/Queen%27s_Gland.png/revision/latest?cb=20190411034958",
         "rarity":"boss",
