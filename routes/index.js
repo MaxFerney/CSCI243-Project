@@ -3,11 +3,9 @@ const router = express.Router();
 const data = require('./../public/ItemData.json');
 const Calc = require('./../utils/functions.js')
 
-
+//AJAX UPDATE BUILD
 router.post('/buildMe',(req,res)=>{
-    //Recieve Data
-
-
+    //Update session info
     if (req.session.buildData){
         req.session.buildData = {
             amount:parseInt(req.body.amount),
@@ -21,7 +19,7 @@ router.post('/buildMe',(req,res)=>{
         };
     }
 
-
+    //Recieve Data
     var hasInfo=true;
     numItems = parseInt(req.body.amount);
     for(var i=0;i<data.length;i++){
@@ -71,7 +69,10 @@ router.post('/buildMe',(req,res)=>{
 
 });
 
+//RENDER BUILD PAGE
 router.get('/build',(req,res)=>{
+    
+    //gather session info
     var info;
     if(req.session.buildData){
         info = req.session.buildData;
@@ -83,13 +84,15 @@ router.get('/build',(req,res)=>{
         };
         info = req.session.buildData;
     }
+
+    //render file
     res.render('build', {
         data : data,
         info : info
     });
 });
 
-
+//RENDER ITEM DESCRIPTION PAGE
 router.get('/item/:id',(req,res)=>{
     item=data[parseInt(req.params.id)-1];
     res.render('item', {
@@ -97,6 +100,7 @@ router.get('/item/:id',(req,res)=>{
     })
 });
 
+//RENDER INDEX PAGE
 router.get('/',(req,res)=>{
     if(!req.session.buildData){
         req.session.buildData = {
