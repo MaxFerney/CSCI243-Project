@@ -1,8 +1,17 @@
 const express = require('express');
-const cookieParser = require('cookie-parser');
 const app = express();
 const path = require('path');
 const port = 8000;
+
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
+
+app.use(session({
+    store: new FileStore(),
+    secret:"asdlkfjaldjsdajhfalksjdfhalksdjdhsdkjf",
+    resave: false,
+    saveUninitialized:false
+}));
 
 const indexRouter = require('./routes/index');
 

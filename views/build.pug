@@ -25,21 +25,12 @@ block content
                     - var currentItem = item;
         //-implement ajax here for image (will have to use live update)
         
-        if(currentItem != null)
+        //-if(currentItem != null)
             img(src=currentItem.imageLink alt=currentItem.name id="buildItemImage")
         label(for="buildAmount") Amount:
             input(id="buildAmount" type="number" min="1" max="10000" name="amount" value=info.amount)
         br
         button(id="submit") Build
-        
-    //-
-        label Description:
-            input(type='text' name='description' value=product.description)
-        label Image (link):
-            input(type='text' name='image' value=product.image)
-        label Price:
-            input(type='number' name='price' value=product.price)
-        button(type='submit' value='Submit') Submit
     hr
     div(id="result")
     //-
