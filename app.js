@@ -8,7 +8,7 @@ const FileStore = require('session-file-store')(session);
 
 app.use(session({
     store: new FileStore(),
-    secret:"asdlkfjaldjsdajhfalksjdfhalksdjdhsdkjf",
+    secret:"qwerytuiopasdfhjklglzxcvbnm",
     resave: false,
     saveUninitialized:false
 }));

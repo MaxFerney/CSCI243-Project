@@ -1,51 +1,27 @@
 const express = require('express');
-const cookieParser = require('cookie-parser');
 const router = express.Router();
 const data = require('./../public/ItemData.json');
 const Calc = require('./../utils/functions.js')
 
 
-//USE COOKIES TO STORE LAST USE DATA (like for a build).
-
-
-// router.get('/:id',(req,res)=>{
-//     //Articles, visits
-//     let pageCount = [0,0];
-//     if (req.cookies && req.cookies.pageCount)
-//     {
-//         pageCount[0] = parseInt(req.cookies.pageCount[0]);
-//         pageCount[1] = parseInt(req.cookies.pageCount[1]);
-//         //pageCount = parseInt(req.cookies.pageCount);
-//     }
-//     console.log("articles: "+pageCount[0]+"; visits: "+pageCount[1]);
-//     //updating visit AND article count
-//     if (pageCount[0]<3){
-//         pageCount[0]++;
-//         pageCount[1]++;
-//         //updating cookie
-//         res.cookie('pageCount', pageCount, {
-//             maxAge : 1000*60*60*24*7
-//         });
-//         res.render('article',{
-//             data:articles[parseInt(req.params.id)]
-//         });
-//     }
-// });
-
-
-
-// router.post('/updateImage',(req,res)=>{
-//     var itemData = {
-//         itemName:req.body.itemName,
-//         itemImage:req.body.itemImage
-//     };
-//     res.json(itemData);
-// });
-
-
-
 router.post('/buildMe',(req,res)=>{
     //Recieve Data
+
+
+    if (req.session.buildData){
+        req.session.buildData = {
+            amount:parseInt(req.body.amount),
+            name:req.body.itemName
+        };
+    }
+    else {
+        req.session.buildData = {
+            amount:1,
+            name:data[0].name
+        };
+    }
+
+
     var hasInfo=true;
     numItems = parseInt(req.body.amount);
     for(var i=0;i<data.length;i++){
@@ -91,29 +67,27 @@ router.post('/buildMe',(req,res)=>{
     };
 
     //Sends data to the site
-    res.json(info)
-    // res.render('build', {
-    //     data : data,
-    //     hasInfo:hasInfo,
-    //     info : info,
-    // });
+    res.json(info);
 
 });
 
 router.get('/build',(req,res)=>{
-    var defaultInfo = {
-        amount:1,
-        name:data[0].name,
-        rarity:"common"
+    var info;
+    if(req.session.buildData){
+        info = req.session.buildData;
+    }
+    else{
+        req.session.buildData = {
+            name:data[0].name,
+            amount:1
+        };
+        info = req.session.buildData;
     }
     res.render('build', {
         data : data,
-        info : defaultInfo
+        info : info
     });
 });
-
-
-
 
 
 router.get('/item/:id',(req,res)=>{
@@ -124,21 +98,13 @@ router.get('/item/:id',(req,res)=>{
 });
 
 router.get('/',(req,res)=>{
-    //Articles, visits
-
-    // let pageCount = [0,0];
-    // if (req.cookies && req.cookies.pageCount)
-    // {
-    //     pageCount[0] = parseInt(req.cookies.pageCount[0]);
-    //     pageCount[1] = parseInt(req.cookies.pageCount[1]);
-    //     //pageCount = parseInt(req.cookies.pageCount);
-    // }
-    // pageCount[1]++;
-    // //updating cookie
-    // res.cookie('pageCount',pageCount, {
-    //     maxAge : 1000*60*60*24*7
-    // });
-
+    if(!req.session.buildData){
+        req.session.buildData = {
+            name:data[0].name,
+            amount:1
+        };
+    }
+    //req.session.buildData
     res.render('index',{
         data : data
     });
