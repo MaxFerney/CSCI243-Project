@@ -1,3 +1,5 @@
+//const ItemList = require('./../itemData.json');
+
 $(document).ready(()=>{
     $('#submit').on('click',(e)=>{
         //prevents POST from occuring
@@ -27,29 +29,52 @@ $(document).ready(()=>{
         });
     })
 
-    $('#buildItemRarity').change((e)=>{
-        //prevents POST from occuring
-        e.preventDefault();
-        //grab data from page
-        let rarityName = $("option[name=\"buildRarityOption\"]:selected").val();
-        console.log(rarityName);
-        //send data to post
-        $.ajax({
-            url: "/selectRarity",
-            method: "POST",
-            data:{
-                rarityName:rarityName,
-            }
-        }) //catch data from post
-        .done((data)=>{
-            $("#rarity").html("<h2>"+data.rarityName+"</h2>");
-        })
-        .fail((xhr)=>{
-            console.log("An Error occured");
-        }).change();
-    })
+
+
+
+
 
     //THIS WILL EVENTUALLY UPDATE THE IMAGE
+    // $('#buildItemOption').change((e)=>{
+    //     //prevents POST from occuring
+    //     e.preventDefault();
+    //     //grab data from page
+    //     let itemName = $("option[name=\"buildItemOption\"]:selected").val();
+    //
+    //     console.log(itemName);
+    //     for (var i=0;i<ItemList.length;i++){
+    //         if(itemName == ItemList[i].name){
+    //             let itemObject = ItemList[i]
+    //         }
+    //         else{
+    //             console.log("HOW DID YOU EVEN GET HERE?????")
+    //         }
+    //     }
+    //     let itemImage = itemObject.imageLink;
+    //     //send data to post
+    //     $.ajax({
+    //         url: "/updateImage",
+    //         method: "POST",
+    //         data:{
+    //             itemName:itemName,
+    //             itemImage:itemImage
+    //         }
+    //     }) //catch data from post
+    //     .done((data)=>{
+    //         $("#image").html("<img src="+data.imageLink+" alt="+data.itemName+">");
+    //     })
+    //     .fail((xhr)=>{
+    //         console.log("An Error occured");
+    //     }).change();
+    // })
+
+
+
+
+
+
+
+
     // $('#buildItemImage').on('click',(e)=>{
     //     e.preventDefault();
     //     $.ajax({

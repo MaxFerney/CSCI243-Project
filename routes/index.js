@@ -32,9 +32,17 @@ const Calc = require('./../utils/functions.js')
 //     }
 // });
 
-router.post('/selectRarity',(req,res)=>{
-    res.json({rarityName:req.body.rarityName})
-});
+
+
+// router.post('/updateImage',(req,res)=>{
+//     var itemData = {
+//         itemName:req.body.itemName,
+//         itemImage:req.body.itemImage
+//     };
+//     res.json(itemData);
+// });
+
+
 
 router.post('/buildMe',(req,res)=>{
     //Recieve Data
