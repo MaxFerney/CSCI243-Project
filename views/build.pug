@@ -6,36 +6,39 @@ block title
     script(src="/javascripts/ajax.js")
 block content
     //-var currentItem=null;
-    form
-        //- create another select for item rarity, then compare this string to item string
-        //-
-            label(for="buildItemRarity") Item Rarity:
-                select(id="buildItemRarity" name="itemRarity")
-                    option(name="buildRarityOption" value="common" selected="selected") common
-                    option(name="buildRarityOption" value="uncommon") uncommon
-                    option(name="buildRarityOption" value="rare") rare
-        //-div(id="image")
-        label(for="buildItemSelect") Item:
-            select(id="buildItemSelect" name="itemName")
-                each item in data
-                    if(item.name == info.name)
-                        option(name="buildItemOption" value=item.name selected="selected") #{item.name}
-                    else
-                        option(name="buildItemOption" value=item.name) #{item.name}
-                    - var currentItem = item;
-        //-implement ajax here for image (will have to use live update)
+    div(class="buildPage")
+        h1="Item Stacker"
+        p="Using our database of items from Risk of Rain 2, use this page to find out how each item stacks"
+        form
+            //- create another select for item rarity, then compare this string to item string
+            //-
+                label(for="buildItemRarity") Item Rarity:
+                    select(id="buildItemRarity" name="itemRarity")
+                        option(name="buildRarityOption" value="common" selected="selected") common
+                        option(name="buildRarityOption" value="uncommon") uncommon
+                        option(name="buildRarityOption" value="rare") rare
+            //-div(id="image")
+            label(for="buildItemSelect") Item:
+                select(id="buildItemSelect" name="itemName")
+                    each item in data
+                        if(item.name == info.name)
+                            option(name="buildItemOption" value=item.name selected="selected") #{item.name}
+                        else
+                            option(name="buildItemOption" value=item.name) #{item.name}
+                        - var currentItem = item;
+            //-implement ajax here for image (will have to use live update)
+            
+            //-if(currentItem != null)
+                img(src=currentItem.imageLink alt=currentItem.name id="buildItemImage")
+            label(for="buildAmount") Amount:
+                input(id="buildAmount" type="number" min="1" max="10000" name="amount" value=info.amount)
+            
+            button(id="submit") Build
         
-        //-if(currentItem != null)
-            img(src=currentItem.imageLink alt=currentItem.name id="buildItemImage")
-        label(for="buildAmount") Amount:
-            input(id="buildAmount" type="number" min="1" max="10000" name="amount" value=info.amount)
-        br
-        button(id="submit") Build
-    hr
-    div(id="result")
-    //-
-        h2="SUCCESS"
-        h3=info.name
-        p=info.amount
-        hr
-        p=info.calcInfo
+        div(id="result")
+        //-
+            h2="SUCCESS"
+            h3=info.name
+            p=info.amount
+            hr
+            p=info.calcInfo

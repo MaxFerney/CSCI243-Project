@@ -7,6 +7,17 @@ body{
     background-color:#eee;
     margin: 10px;
 }
+
+h1{
+    font-family:$headerFont;
+    font-weight:$headerWeight;
+    font-size:$headerSize;
+}
+.itemPage h1{
+    font-size:$headerSubSize;
+    font-weight:$headerSubWeight;
+}
+
 table,td{
     border:1px solid black;
     border-spacing: 10px;
