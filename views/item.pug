@@ -10,26 +10,26 @@ block title
     title= item.name+" | RoR2 Builder"
 block content
     - var stackSuffix1 = " ";
-    - var stackingVar1 = item.stackingVar1;
-    - var stackingValue1 = item.stackingValue1;
+    - var stackingVar1 = item.stackingVar1.toFixed(1);
+    - var stackingValue1 = item.stackingValue1.toFixed(1);
     if(item.stackingType1=="percentage")
         - var stackSuffix1 = "%";
         - var stackingVar1 = (item.stackingVar1 * 100).toFixed(2);
         - var stackingValue1 = (item.stackingValue1 * 100).toFixed(2);
-    
-    - var stackSuffix2 = " ";
-    - var stackingVar2 = item.stackingVar2;
-    - var stackingValue2 = item.stackingValue2;
-    if(item.stackingType2=="percentage")
-        - var stackSuffix2 = "%";
-        - var stackingVar2 = (item.stackingVar2 * 100).toFixed(2);
-        - var stackingValue2 = (item.stackingValue2 * 100).toFixed(2);
+    if(item.stackingVar2 != null)
+        - var stackSuffix2 = " ";
+        - var stackingVar2 = item.stackingVar2.toFixed(1);
+        - var stackingValue2 = item.stackingValue2.toFixed(1);
+        if(item.stackingType2=="percentage")
+            - var stackSuffix2 = "%";
+            - var stackingVar2 = (item.stackingVar2 * 100).toFixed(2);
+            - var stackingValue2 = (item.stackingValue2 * 100).toFixed(2);
     hr
-    h1= item.name
+    h1(class=item.rarity) #{item.name}
     img(src=item.imageLink alt=item.name)
     h2= item.description
     hr
-    div(class= "websiteContent")
+    //-div(class= "websiteContent")
         p= item.content
     p="Stack Type: "+item.stackType
     hr
