@@ -1,8 +1,19 @@
+
+@import 'reset';
+@import 'variables';
+@import 'grid';
+
 body{
     background-color:#eee;
+    margin: 10px;
 }
-
-table{
+table,td{
     border:1px solid black;
     border-spacing: 10px;
+}
+td:first-child{
+    padding:5px 10px 0px 5px;
+}
+td:last-child{
+    padding:5px 5px 0px 10px;
 }

@@ -40,11 +40,13 @@ block content
                 th Stack Effect
             tr
                 td=stackingVar1+stackSuffix1+" "+item.stackingName1
-                td=stackingValue1+stackSuffix1+" "+item.stackingName1+" per stack"
+                td=stackingValue1+stackSuffix1+" "+item.stackingName1
+                //-+" per stack"
             if(item.stackingVar2 != null)
                 tr
                     td=stackingVar2+stackSuffix2+" "+item.stackingName2
-                    td=stackingValue2+stackSuffix2+" "+item.stackingName2+" per stack"
+                    td=stackingValue2+stackSuffix2+" "+item.stackingName2
+                    //-+" per stack"
     
     
     
