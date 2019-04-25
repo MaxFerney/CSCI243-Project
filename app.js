@@ -16,7 +16,7 @@ app.use(session({
 const indexRouter = require('./routes/index');
 
 app.use(express.urlencoded({extended:false}));
-app.use(cookieParser());
+
 
 app.use('/',express.static('public'));
 
