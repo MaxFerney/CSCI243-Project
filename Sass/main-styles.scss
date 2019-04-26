@@ -28,6 +28,7 @@ h1{
 }
 nav{
     margin-bottom:20px;
+    font-size:$bodySmallSize+3px
 }
 p, .itemPage h2, form{
     line-height:30px;
@@ -41,6 +42,11 @@ select{
 
 
 
+//Page Specific Changes
+.indexPage a{
+    margin-top:50px;
+}
+
 
 .itemPage h1,h2,h3{
     font-size:$headerSubSize;
@@ -50,10 +56,13 @@ select{
     font-size:$bodyLargeSize;
 }
 
+
 .buildPage form{
     margin-top:$headerSubSize;
 }
-
+.buildPage tr{
+    padding: 30px 10px;
+}
 
 table,td{
     border:1px solid $secondary;
