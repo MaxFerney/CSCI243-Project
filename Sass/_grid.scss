@@ -21,6 +21,17 @@ h1{
     grid-column:3/-1;
 }
 
+.itemPage h1,.itemPage h2,.itemPage p{
+    grid-column: 1/3;
+}
+.itemPage img{
+    grid-column: 1/2;
+}
+.itemPage table{
+    grid-column:3
+}
+
+
 .buildPage p{
     grid-column:1/2;
 }
@@ -32,4 +43,16 @@ h1{
 }
 .buildPage #result{
     grid-column:3/4;
+}
+
+form{
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns:repeat(8, 1fr);
+}
+form>*{
+    grid-column: 1/-1;
+}
+form>*:last-child{
+    grid-column:1/3;
 }

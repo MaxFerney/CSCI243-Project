@@ -5,7 +5,7 @@
 
 body{
     background-color:$primary;
-    margin: 10px;
+    margin: 1.5%;
     color:$secondary;
 }
 a{
@@ -22,9 +22,6 @@ p,td,th,nav,label{
     font-family:$headerFont;
     font-size:$bodySmallSize;
     font-weight: $headerSubWeight;
-}
-h1{
-    margin-bottom:45px;
 }
 nav{
     margin-bottom:20px;
@@ -47,6 +44,16 @@ select{
     margin-top:50px;
 }
 
+.indexPage h1, .buildPage h1{
+    margin-bottom:45px;
+}
+
+.buildPage form{
+    margin-top:$headerSubSize;
+}
+.buildPage tr{
+    padding: 30px 10px;
+}
 
 .itemPage h1,h2,h3{
     font-size:$headerSubSize;
@@ -55,13 +62,11 @@ select{
 .itemPage h2{
     font-size:$bodyLargeSize;
 }
-
-
-.buildPage form{
-    margin-top:$headerSubSize;
+.itemPage h1{
+    margin-bottom:25px;
 }
-.buildPage tr{
-    padding: 30px 10px;
+.itemPage td{
+    line-height:25px;
 }
 
 table,td{
