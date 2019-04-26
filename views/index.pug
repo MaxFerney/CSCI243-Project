@@ -6,7 +6,7 @@ block content
     div(class="indexPage")
         h1 Risk of Rain 2 Items
         each item in data
-            a(href="/item/"+item.id)
+            a(href="/item/"+item.id class=item.rarity)
                 div
                     h2= item.name
                     img(src=item.imageLink alt=item.name)

@@ -1,11 +1,35 @@
 div[class*="Page"]{
     display:grid;
-    grid-gap:3px;
+    grid-gap:5px;
     grid-template-columns:repeat(4, 1fr);
 }
 nav,h1{
     grid-column: 1 / -1;
 }
+nav{
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns:repeat(8, 1fr);
+}
+nav>a{
+    grid-column:1/2
+}
+nav>a+a{
+    grid-column:2/5;
+}
 h1{
     grid-column:3/-1;
+}
+
+.buildPage p{
+    grid-column:1/2;
+}
+.buildPage h1{
+    grid-column: 1/3;
+}
+.buildPage form{
+    grid-column: 1/2;
+}
+.buildPage #result{
+    grid-column:3/4;
 }

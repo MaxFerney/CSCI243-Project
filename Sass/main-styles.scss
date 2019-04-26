@@ -4,22 +4,59 @@
 @import 'grid';
 
 body{
-    background-color:#eee;
+    background-color:$primary;
     margin: 10px;
+    color:$secondary;
 }
-
-h1{
+a{
+    text-decoration:none;
+    color:$accent2;
+}
+h1,h2,h3{
     font-family:$headerFont;
     font-weight:$headerWeight;
     font-size:$headerSize;
 }
-.itemPage h1{
+
+p,td,th,nav,label{
+    font-family:$headerFont;
+    font-size:$bodySmallSize;
+    font-weight: $headerSubWeight;
+}
+h1{
+    margin-bottom:45px;
+}
+nav{
+    margin-bottom:20px;
+}
+p, .itemPage h2, form{
+    line-height:30px;
+}
+select, input{
+    margin-left:20px;
+}
+select{
+    margin-left:60px;
+}
+
+
+
+
+.itemPage h1,h2,h3{
     font-size:$headerSubSize;
     font-weight:$headerSubWeight;
 }
+.itemPage h2{
+    font-size:$bodyLargeSize;
+}
+
+.buildPage form{
+    margin-top:$headerSubSize;
+}
+
 
 table,td{
-    border:1px solid black;
+    border:1px solid $secondary;
     border-spacing: 10px;
 }
 td:first-child{
